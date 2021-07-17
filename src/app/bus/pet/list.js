@@ -20,7 +20,7 @@ export const List = () => {
   }
 
   const petsJSX = pets.map(({ id, name, weight }) => (
-    <p key={id}>
+    <p key={ id }>
       <span>Name: { name }</span><br/>
       <span>Weight: { weight }</span>
     </p>
