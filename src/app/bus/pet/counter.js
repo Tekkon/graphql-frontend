@@ -9,7 +9,19 @@ export const Counter = () => {
 
   console.log(data);
 
+  if (loading) {
+    return <p>Loading...</p>
+  }
+
+  if (error) {
+    return (
+      <p>
+        Error: { error.message }
+      </p>
+    )
+  }
+
   return (
-    <p>Counter</p>
+    <p>AvailablePets: { data.availablePets }</p>
   )
 }
