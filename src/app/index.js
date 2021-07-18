@@ -14,7 +14,7 @@ export const App = () => {
   return (
     <>
       <ApolloProvider client={client}>
-        <Customer />
+        {/*<Customer />*/}
         <Login />
         <Pet />
       </ApolloProvider>
