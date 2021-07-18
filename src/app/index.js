@@ -5,6 +5,7 @@ import { ApolloProvider } from "@apollo/react-hooks";
 // Components
 import { Pet } from "./bus/pet";
 import { Customer } from './bus/customer';
+import { Login } from './bus/customer/login';
 
 // Other
 import { client } from "./init/client";
@@ -14,7 +15,8 @@ export const App = () => {
     <>
       <ApolloProvider client={client}>
         <Customer />
-        {/*<Pet />*/}
+        <Login />
+        <Pet />
       </ApolloProvider>
     </>
   )
